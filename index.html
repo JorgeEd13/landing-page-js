@@ -22,17 +22,17 @@
         </a>
 
         <ul class="homeLinks">
-            <li><a href="#" id="buttonHome">Home</a></li>
-            <li><a href="#" id="buttonAboutMe">About Me</a></li>
-            <li><a href="#" id="buttonPortfolio">Portfolio</a></li>
-            <li><a href="#" id="buttonContact">Contact</a></li>
+            <li><a href="#home" id="buttonHome">Home</a></li>
+            <li><a href="#aboutMe" id="buttonAboutMe">About Me</a></li>
+            <li><a href="#portfolio" id="buttonPortfolio">Portfolio</a></li>
+            <li><a href="#contact" id="buttonContact">Contact</a></li>
         </ul>
 
         <button id="buttonLogIn">Log In</button>
         <button id="buttonSignIn">Sign Up</button>
     </header>
     <main>
-        <div class="carouselSpace">
+        <section class="carouselSpace">
             <div class="carouselImg">
                 <img class="imageCarousel activeImg" src="https://picsum.photos/id/237/200/300" alt="">
                 <img class="imageCarousel" src="https://picsum.photos/id/238/200/300" alt="">
@@ -48,19 +48,15 @@
                 <button class="buttonCarousel"></button>
                 <button class="buttonCarousel"></button>
             </div>
-        </div>
+        </section>
 
         <div class="content">
-            <div class="infos">
+            <section class="infos">
                 <h1 class="titleAboutMe">Sobre Mim:</h1>
-                <p class="pAboutMe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, adipisci! Impedit exercitationem
-                    voluptate
-                    fugiat officia, distinctio labore quae deserunt voluptas nobis ab officiis quis sapiente pariatur
-                    quaerat
-                    provident est similique.
-                </p>
-            </div>
+                <div class="pAboutMe" id="aboutMe">
+                    <p>Esse texto será carregado dinamicamente.</p>
+                </div>
+            </section>
         </div>
 
         <div class="sideContact">
