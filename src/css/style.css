@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* "Reseta" essas configurações específicas que vem por padrão nos navegadores. */
+
 body {
     font-family: 'Poppings', sans-serif;
     max-width: 1280px;
@@ -95,14 +111,14 @@ main:after {
     height: 100vh;
     object-fit: cover;
     display: none;
-    animation: mudarImagem 0.7s;
+    animation: changeImage 0.7s;
 }
 
 .carouselImg .image-portfolio.activeImg {
     display: block;
 }
 
-@keyframes mudarImagem {
+@keyframes changeImage {
     from {
         opacity: 0.85;
     }
