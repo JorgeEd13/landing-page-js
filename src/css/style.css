@@ -31,6 +31,10 @@ main:after {
     z-index: -1;
 }
 
+.logo {
+    filter: invert(1);
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -106,7 +110,7 @@ main:after {
     z-index: -1;
 }
 
-.carouselImg .image-portfolio {
+.carouselImg .imageCarousel {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -114,7 +118,7 @@ main:after {
     animation: changeImage 0.7s;
 }
 
-.carouselImg .image-portfolio.activeImg {
+.carouselImg .imageCarousel.activeImg {
     display: block;
 }
 
