@@ -1,18 +1,13 @@
-/*
-    OBJETIVO - quando clicarmos no botão temos que mostrar a imagem de fundo correspondente
+const textAboutMe = document.querySelector('#aboutMe');
 
-    - passo 1 - dar um jeito de pegar o elemento HTML dos botões
+const dataWebSite = {
+    aboutMe: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsum, voluptatibus cupiditate labore eligendi tenetur
+     deleniti fugiat nihil facilis, quidem atque quisquam? Unde eveniet odit dolor voluptatum saepe magnam veniam?</p>`
+};
 
-    - passo 2 - dar um jeito de identificar o clique do usuário no botão
-
-    - passo 3 - desmarcar o botão selecionado anterior
-
-    - passo 4 - marcar o botão clicado como se estivesse selecionado
-
-    - passo 5 - esconder a imagem anterior
-
-    - passo 6 - fazer aparecer a imagem correspondente ao botão clicado
-*/
+const onLoad = () => {
+    textAboutMe.innerHTML = dataWebSite.aboutMe;
+}
 
 // passo 1 - dar um jeito de pegar o elemento HTML dos botões
 const carouselButtons = document.querySelectorAll('.buttonCarousel');
