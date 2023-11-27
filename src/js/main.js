@@ -5,9 +5,7 @@ const dataWebSite = {
      deleniti fugiat nihil facilis, quidem atque quisquam? Unde eveniet odit dolor voluptatum saepe magnam veniam?</p>`
 };
 
-const onLoad = () => {
     textAboutMe.innerHTML = dataWebSite.aboutMe;
-}
 
 // passo 1 - dar um jeito de pegar o elemento HTML dos botões
 const carouselButtons = document.querySelectorAll('.buttonCarousel');
