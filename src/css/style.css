@@ -16,7 +16,7 @@ a {
 
 body {
     font-family: 'Poppings', sans-serif;
-    max-width: 1280px;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -43,30 +43,30 @@ main:after {
 }
 
 .infos .titleAboutMe {
-    max-width: 350px;
+    max-width: 21.875rem;
     filter: invert(1);
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .infos .pAboutMe {
     width: 49%;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 1.875rem;
 }
 
 .carouselButtons.portfolio {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .carouselButtons.portfolio .buttonCarousel {
     background-color: #ffffff;
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent;
     cursor: pointer;
     border-color: #ffffff;
 }
@@ -79,7 +79,7 @@ main:after {
     position: fixed;
     top: 0;
     right: 0;
-    width: 80px;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,11 +89,11 @@ main:after {
 .asideMenu ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .asideMenu .icon {
-    width: 30px;
+    width: 1.25rem;
     filter: invert(1);
     transition: 0.3s ease-in-out;
 }
