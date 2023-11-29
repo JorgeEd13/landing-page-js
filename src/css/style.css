@@ -13,9 +13,11 @@ a {
 }
 
 /* "Reseta" essas configurações específicas que vem por padrão nos navegadores. */
+
 header {
     display: flex;
 }
+
 .container-a {
     background-color: red;
     width: 100%;
@@ -33,7 +35,7 @@ header {
 
 }
 
-header .homeLinks li { 
+header .homeLinks li {
     display: flex;
     justify-content: space-around;
     padding: 0 4%;
@@ -46,6 +48,7 @@ body {
 }
 
 main:after {
+    position: relative;
     content: '';
     min-height: 100vh;
     width: 100vw;
@@ -63,8 +66,7 @@ main:after {
 .content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-evenly;
+    margin: 5% 0;
 }
 
 .infos .titleAboutMe {
@@ -78,26 +80,6 @@ main:after {
     font-size: 1.5rem;
     color: #ffffff;
     line-height: 1.875rem;
-}
-
-.carouselButtons.portfolio {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-}
-
-.carouselButtons.portfolio .buttonCarousel {
-    background-color: #ffffff;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: 0.125rem solid transparent;
-    cursor: pointer;
-    border-color: #ffffff;
-}
-
-.carouselButtons.portfolio .buttonCarousel.selected {
-    background-color: #1d8346;
 }
 
 .asideMenu {
@@ -126,25 +108,42 @@ main:after {
     transform: scale(1.5);
 }
 
-.carouselImg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+.carouselSpace {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.carouselImg .imageCarousel {
+.containerCarousel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    display: none;
-    animation: changeImage 0.7s;
 }
 
-.carouselImg .imageCarousel.activeImg {
-    display: block;
+.carouselImg {}
+
+.carouselButtons.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
 }
+
+.carouselButtons.portfolio .buttonCarousel {
+    background-color: #ffffff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 0.125rem solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.carouselButtons.portfolio .buttonCarousel.selected {
+    background-color: #1d8346;
+}
+
 
 @keyframes changeImage {
     from {
@@ -156,8 +155,4 @@ main:after {
     }
 }
 
-@media screen {
-
-    
-    
-}
+@media screen {}
