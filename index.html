@@ -12,26 +12,33 @@
 
     <link rel="icon" type="images/png" sizes="32x32" href="./src/assets/images/icon.png">
     <link rel="stylesheet" href="./src/css/style.css">
+
+    <script src="https://kit.fontawesome.com/9a12d0559a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <noscript>
         <p>Você precisa de JavaScript a página funciona</p>
     </noscript>
+
     <header>
-        <a href="./index.html">
-            <img class="logo" src="./src/assets/images/iconmonstr-building-4.svg" alt="Logo da Home">
-        </a>
+        <div class="container-a">
+            <a href="./index.html">
+                <img class="logo" src="./src/assets/images/iconmonstr-building-4.svg" alt="Logo da Home">
+            </a>
 
-        <ul class="homeLinks">
-            <li><a href="#home" id="buttonHome">Home</a></li>
-            <li><a href="#aboutMe" id="buttonAboutMe">About Me</a></li>
-            <li><a href="#portfolio" id="buttonPortfolio">Portfolio</a></li>
-            <li><a href="#contact" id="buttonContact">Contact</a></li>
-        </ul>
+            <ul class="homeLinks">
+                <li><a href="#home" id="buttonHome">Home</a></li>
+                <li><a href="#aboutMe" id="buttonAboutMe">About-Me</a></li>
+                <li><a href="#portfolio" id="buttonPortfolio">Portfolio</a></li>
+                <li><a href="#contact" id="buttonContact">Contact</a></li>
 
-        <button id="buttonLogIn">Log In</button>
-        <button id="buttonSignIn">Sign Up</button>
+                <button class="btnLogIn" id="buttonLogIn">Log In</button>
+                <button class="btnSignUp" id="buttonSignIn">Sign Up</button>
+            </ul>
+
+        </div>
+
     </header>
     <main>
         <div class="content">
@@ -48,18 +55,17 @@
                 <ul>
                     <li id="gitHub">
                         <a href="https://github.com/">
-                            <img class="icon" src="./src/assets/images/github.svg" alt="Logo do GitHub">
+                            <i class="fa-brands fa-github icon" style="color: #ffffff;"></i>
                         </a>
                     </li>
                     <li id="linkedIn">
                         <a href="https://linkedin.com/">
-                            <img class="icon" src="./src/assets/images/linkedin-in.svg" alt="Logo do LinkedIn">
+                            <i class="fa-brands fa-linkedin icon" style="color: #ffffff;"></i> </a>
                         </a>
                     </li>
                     <li id="whatsApp">
                         <a href="https://whatsapp.com/">
-                            <img class="icon" src="./src/assets/images/whatsapp-logo-variant.svg"
-                                alt="Logo do Whatsapp">
+                            <i class="fa-brands fa-whatsapp icon" style="color: #ffffff;"></i>
                         </a>
                     </li>
                 </ul>
@@ -68,11 +74,7 @@
 
         <section class="carouselSpace">
             <div class="carouselImg">
-                <img class="imageCarousel activeImg" src="https://picsum.photos/id/237/200/300" alt="">
-                <img class="imageCarousel" src="https://picsum.photos/id/238/200/300" alt="">
-                <img class="imageCarousel" src="https://picsum.photos/id/239/200/300" alt="">
-                <img class="imageCarousel" src="https://picsum.photos/id/236/200/300" alt="">
-                <img class="imageCarousel" src="https://picsum.photos/id/235/200/300" alt="">
+                <img class="imageCarousel activeImg" id="imageCarousel" src="#" alt="Imagem inicial">
             </div>
 
             <div class="carouselButtons portfolio">
