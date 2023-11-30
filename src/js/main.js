@@ -15,23 +15,19 @@ window.addEventListener("load", onLoad);
 const carouselButtons = document.querySelectorAll('.buttonCarousel');
 let imagesCarousel = document.getElementById('imageCarousel');
 
-let index = 100;
+let firstImgId = 100;
 
-imagesCarousel.src = `https://picsum.photos/id/${index}/200/200`;
+imagesCarousel.src = `https://picsum.photos/id/${firstImgId}/500`;
 
 carouselButtons.forEach((buttonCarousel, i) => {    
 buttonCarousel.addEventListener('click', () => {
         const selectedButton = document.querySelector('.selected');
         selectedButton.classList.remove('selected');
         
-        let imageIndex = index + i;
-        let activeImg = `https://picsum.photos/id/${imageIndex}/200/200`;
+        let imageIndex = firstImgId + i;
+        let activeImg = `https://picsum.photos/id/${imageIndex}/500`;
         imagesCarousel.src = activeImg;
         
         buttonCarousel.classList.add('selected');
     });
 });
-
-
-
-
